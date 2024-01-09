@@ -1,11 +1,27 @@
 container:
   type: ColumnPanel
-  properties: {wrap_on: mobile}
+  properties: {wrap_on: tablet, visible: true}
+  event_bindings: {}
 components:
+- name: label_1
+  properties: {bold: true, text: STATISTICSAIMODELING, italic: true, underline: true,
+    icon: 'fa:area-chart', spacing_above: small}
+  type: Label
+  layout_properties: {grid_position: 'MIARET,ELAVDS', row_background: '#e3f995'}
 - name: image_1
   properties: {background: '#5770d6', border: '#1156', source: _/theme/siva.png.gif,
     height: '100', horizontal_align: right, vertical_align: center}
   type: Image
-  layout_properties: {grid_position: 'LNFWEA,IZXHRD'}
+  layout_properties: {grid_position: 'IITZFU,PURGVP'}
   data_bindings: []
+  event_bindings: {mouse_move: image_1_mouse_move}
+- name: date_picker_1
+  properties: {pick_time: true, background: '#11000222', placeholder: ENTER THE DATE}
+  type: DatePicker
+  layout_properties: {grid_position: 'IWZRYT,HWRFBH'}
+  event_bindings: {change: date_picker_1_change}
+- name: plot_1
+  properties: {height: 282.08331298828125}
+  type: Plot
+  layout_properties: {grid_position: 'LLUKQD,ROCSIU'}
 is_package: true
