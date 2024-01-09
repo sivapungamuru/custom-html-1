@@ -1,3 +1,11 @@
-container: {type: ColumnPanel}
-components: []
+container:
+  type: ColumnPanel
+  properties: {wrap_on: mobile}
+components:
+- name: image_1
+  properties: {background: '#5770d6', border: '#1156', source: _/theme/siva.png.gif,
+    height: '100', horizontal_align: right, vertical_align: center}
+  type: Image
+  layout_properties: {grid_position: 'LNFWEA,IZXHRD'}
+  data_bindings: []
 is_package: true
