@@ -9,10 +9,14 @@ class Form1(Form1Template):
 
     # Any code you write here will run before the form opens.
 
-  def image_1_mouse_move(self, x, y, **event_args):
+  def welocme_mouse_move(self, x, y, **event_args):
     """This method is called when the mouse cursor moves over this component"""
     pass
 
   def date_picker_1_change(self, **event_args):
     """This method is called when the selected date changes"""
+    pass
+
+  def plot_1_click(self, points, **event_args):
+    """This method is called when a data point is clicked."""
     pass
