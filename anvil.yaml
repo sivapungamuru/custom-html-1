@@ -1,10 +1,19 @@
-allow_embedding: false
-package_name: Custom_HTML_1
-name: Custom HTML 1
-startup_form: Form1
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+package_name: AiModelig
+allow_embedding: false
+name: AiModelig
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+metadata: {title: statistics Modeling, description: welcome  AI-Modeling, logo_img: 'asset:ai
+    IMAGE.png'}
+startup_form: Form1
+db_schema:
+  table_1:
+    client: none
+    server: full
+    columns: []
+    title: Table 1
+uplink_visible: true

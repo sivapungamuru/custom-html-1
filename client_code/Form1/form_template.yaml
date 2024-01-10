@@ -20,9 +20,4 @@ components:
   type: DatePicker
   layout_properties: {grid_position: 'IWZRYT,HWRFBH'}
   event_bindings: {change: date_picker_1_change}
-- name: plot_1
-  properties: {height: 282.08331298828125}
-  type: Plot
-  layout_properties: {grid_position: 'LLUKQD,ROCSIU'}
-  event_bindings: {click: plot_1_click}
 is_package: true
