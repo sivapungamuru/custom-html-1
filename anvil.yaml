@@ -16,4 +16,9 @@ db_schema:
     server: full
     columns: []
     title: Table 1
+  table_2:
+    client: none
+    server: full
+    columns: []
+    title: Table 2
 uplink_visible: true
