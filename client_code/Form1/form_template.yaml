@@ -12,7 +12,7 @@ components:
   properties: {background: '#5770d6', border: '#1156', source: _/theme/siva.png.gif,
     height: '100', horizontal_align: right, vertical_align: center}
   type: Image
-  layout_properties: {grid_position: 'IITZFU,PURGVP'}
+  layout_properties: {grid_position: 'VTSPRU,DYRXCL'}
   data_bindings: []
   event_bindings: {mouse_move: welocme_mouse_move}
 - name: date_picker_1
@@ -20,4 +20,8 @@ components:
   type: DatePicker
   layout_properties: {grid_position: 'IWZRYT,HWRFBH'}
   event_bindings: {change: date_picker_1_change}
+- name: file_loader_1
+  properties: {italic: false, bold: true, underline: false, align: center, background: '#5871bb'}
+  type: FileLoader
+  layout_properties: {grid_position: 'BQCJWT,GUGDXW'}
 is_package: true
