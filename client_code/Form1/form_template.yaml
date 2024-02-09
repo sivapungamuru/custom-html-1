@@ -29,7 +29,14 @@ components:
   type: FileLoader
   layout_properties: {grid_position: 'ZXKCYM,XAPVUZ'}
 - name: button_1
-  properties: {text: STAT, align: right, visible: true}
+  properties: {text: STAT, align: right, visible: true, icon_align: left_edge}
   type: Button
-  layout_properties: {grid_position: 'ZIPVPK,ZADQXR'}
+  layout_properties: {grid_position: 'ZIPVPK,ZADQXR', full_width_row: false}
+  data_bindings:
+  - {property: icon, code: 'self.item['''']', writeback: false}
+  event_bindings: {show: button_1_show, click: button_1_click}
+- name: linear_panel_1
+  properties: {}
+  type: LinearPanel
+  layout_properties: {grid_position: 'OEJICJ,QRJQXY'}
 is_package: true

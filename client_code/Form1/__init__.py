@@ -24,3 +24,14 @@ class Form1(Form1Template):
   def plot_1_click(self, points, **event_args):
     """This method is called when a data point is clicked."""
     pass
+
+  def button_1_show(self, **event_args):
+    """This method is called when the Button is shown on the screen"""
+    pass from anvil.files import data_files
+
+@anvil.server.callable
+def return_text_from_file():
+    # Read the contents of a file
+    with open(data_files['test.txt']) as f:
+        text = f.read()
+    return text
