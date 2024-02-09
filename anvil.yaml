@@ -14,7 +14,10 @@ db_schema:
   table_1:
     client: none
     server: full
-    columns: []
+    columns:
+    - name: Column1
+      admin_ui: {width: 200, order: 0}
+      type: number
     title: Table 1
   table_2:
     client: none

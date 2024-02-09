@@ -2,6 +2,9 @@ container:
   type: ColumnPanel
   properties: {wrap_on: tablet, visible: true}
   event_bindings: {}
+  data_bindings:
+  - {property: tag, code: 'self.item['''']', writeback: false}
+  - {property: visible, code: 'self.item['''']', writeback: false}
 components:
 - name: label_1
   properties: {bold: true, text: STATISTICSAIMODELING, italic: true, underline: true,
@@ -21,7 +24,12 @@ components:
   layout_properties: {grid_position: 'IWZRYT,HWRFBH'}
   event_bindings: {change: date_picker_1_change}
 - name: file_loader_1
-  properties: {italic: false, bold: true, underline: false, align: center, background: '#5871bb'}
+  properties: {role: null, align: center, visible: false, spacing_above: medium, spacing_below: large,
+    italic: false, background: '#cdf561', bold: true, underline: false, icon: 'fa:upload'}
   type: FileLoader
-  layout_properties: {grid_position: 'BQCJWT,GUGDXW'}
+  layout_properties: {grid_position: 'ZXKCYM,XAPVUZ'}
+- name: button_1
+  properties: {text: STAT, align: right, visible: true}
+  type: Button
+  layout_properties: {grid_position: 'ZIPVPK,ZADQXR'}
 is_package: true
