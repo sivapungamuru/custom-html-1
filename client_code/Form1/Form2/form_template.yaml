@@ -7,3 +7,7 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
+- name: check_box_1
+  properties: {text: check_box_1}
+  type: CheckBox
+  layout_properties: {slot: default}
